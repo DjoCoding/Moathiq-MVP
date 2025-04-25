@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+@theme {
+  --color-main: #0339a6;
+  --color-black: #0d0d0d;
+  --color-white: #ffffff;
+  --shadow-form: 0px -10px 10px 1px #aaa;
+  --shadow-card: 0px -5px 10px 1px #aaa;
+}

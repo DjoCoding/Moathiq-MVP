@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Screen Recorder Extension",
+    "description": "A Chrome extension to record your screen",
+    "version": "1.0",
+    "permissions": [
+      "activeTab",
+      "storage",
+      "tabs"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "index.html"
+    }
+}
+  
