@@ -20,10 +20,10 @@ export default function Navbar() {
             />
           </svg>
         </button>
-        <nav dir="rtl" className="flex items-center justify-center gap-4">
+        <nav dir="rtl" className="flex items-center justify-center">
           {navBarLinks.map((link) => (
             <Link
-              className="px-2 py-3 text-white hover:bg-white hover:text-main duration-200 transition-all"
+              className="text-center w-[90px] px-2 py-3 text-white hover:bg-white hover:text-main duration-200 transition-all"
               to={link.to}
             >
               {link.name}

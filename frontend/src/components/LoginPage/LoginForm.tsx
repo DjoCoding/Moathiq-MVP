@@ -28,7 +28,7 @@ export default function LoginForm() {
         type="text"
         name="username"
         placeholder="رقم المستخدم"
-        className="focus:border-2 focus:border-black/50 outline-0 border-2 border-black/30 px-2 py-2 rounded-xl"
+        className="font-[500] focus:border-2 focus:border-black/50 outline-0 border-2 border-black/30 px-2 py-2 rounded-xl"
         onChange={handleChange}
         value={formData.username}
       />
@@ -36,7 +36,7 @@ export default function LoginForm() {
         type="password"
         name="password"
         placeholder="كلمة السرّ"
-        className="focus:border-2 focus:border-black/50 outline-0 border-2 border-black/30 px-2 py-2 rounded-xl"
+        className="font-[500] focus:border-2 focus:border-black/50 outline-0 border-2 border-black/30 px-2 py-2 rounded-xl"
         onChange={handleChange}
         value={formData.password}
       />
@@ -50,7 +50,7 @@ export default function LoginForm() {
         </button>
       </div>
       <div className="flex items-center justify-center">
-        <Link className="text-sm text-black/70 underline" to="/reset-password">
+        <Link className="font-bold text-sm text-black/70 underline" to="/reset-password">
           نسيت كلمة السر ؟
         </Link>
       </div>
