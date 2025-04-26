@@ -29,7 +29,7 @@ export default function Classes() {
       animate="to"
       variants={containerVariants}
       dir="rtl"
-      className="w-fit grid grid-cols-[repeat(1,_350px)] lg:grid-cols-[repeat(3,_300px)] 2xl:grid-cols-[repeat(4,_300px)] gap-x-2 gap-y-6"
+      className="w-fit grid grid-cols-[repeat(1,_350px)] lg:grid-cols-[repeat(3,_300px)] 2xl:grid-cols-[repeat(3,_400px)] gap-x-4 gap-y-6"
     >
       {classes.map(({ id, name, description }) => {
         return <Class key={id} id={id} name={name} description={description} />;

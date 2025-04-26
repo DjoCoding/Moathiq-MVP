@@ -34,7 +34,15 @@ export default function Progress({ value, className = "" }: ProgressProps) {
           className={cn("rounded-xl absolute right-0 bg-main top-0 bottom-0")}
         ></motion.div>
       </div>
-      <AnimatedNumber className={className} from={0} to={value} duration={value/100} />
+      <span>
+        <AnimatedNumber
+          className={className}
+          from={0}
+          to={value}
+          duration={value / 100}
+        />
+        <span className={className}>%</span>
+      </span>
     </div>
   );
 }

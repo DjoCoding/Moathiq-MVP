@@ -29,7 +29,7 @@ export default function Class({ id, name, description }: ClassProps) {
   const handleClick = () => setShouldNavigate(true);
 
   if (shouldNavigate) {
-    return <Navigate to={`/dashboard/classes/${id}`} />;
+    return <Navigate to={`/classes/${id}`} />;
   }
 
   return (

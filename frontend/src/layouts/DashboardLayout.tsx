@@ -1,7 +1,7 @@
 import Navbar from "../components/DashboardPage/Navbar";
 import { Outlet } from "react-router-dom";
 
-export default function DashboardLayout() {
+export default function Dashboardayout() {
   return (
     <div className="w-screen h-screen flex flex-col">
       <Navbar />

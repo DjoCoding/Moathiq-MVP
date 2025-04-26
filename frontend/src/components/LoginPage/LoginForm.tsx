@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link, Navigate } from "react-router-dom";
+import { useAuth } from "../../providers/Auth";
 
 interface LoginFormDataT {
   username: string;
@@ -14,6 +15,8 @@ export default function LoginForm() {
 
   const [success, setSuccess] = useState<boolean>(false);
 
+  const { login } = useAuth();
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -24,11 +27,12 @@ export default function LoginForm() {
 
   const handleClick = () => {
     if (formData.username.length > 0 && formData.password.length > 0) {
+      login();
       return setSuccess(true);
     }
   };
 
-  if(success) return <Navigate to="/dashboard/classes" />
+  if (success) return <Navigate to="/classes" />;
 
   return (
     <form className="mt-10 flex flex-col gap-4" dir="rtl">
