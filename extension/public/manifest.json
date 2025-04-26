@@ -1,12 +1,13 @@
 {
     "manifest_version": 3,
-    "name": "Screen Recorder Extension",
-    "description": "A Chrome extension to record your screen",
+    "name": "Moathiq Extension",
+    "description": "A Chrome extension that serves the Moathiq platform",
     "version": "1.0",
     "permissions": [
-      "activeTab",
+      "tabCapture",
       "storage",
-      "tabs"
+      "activeTab",
+      "scripting"
     ],
     "background": {
       "service_worker": "background.js"

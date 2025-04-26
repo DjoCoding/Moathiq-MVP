@@ -1,1 +1,81 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: "IBMPlexSansArabic";
+  src: url("/public/font/IBMPlexSansArabic/IBMPlexSansArabic-Thin.ttf")
+    format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IBMPlexSansArabic";
+  src: url("/public/font/IBMPlexSansArabic/IBMPlexSansArabic-ExtraLight.ttf")
+    format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IBMPlexSansArabic";
+  src: url("/public/font/IBMPlexSansArabic/IBMPlexSansArabic-Light.ttf")
+    format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IBMPlexSansArabic";
+  src: url("/public/font/IBMPlexSansArabic/IBMPlexSansArabic-Regular.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IBMPlexSansArabic";
+  src: url("/public/font/IBMPlexSansArabic/IBMPlexSansArabic-Medium.ttf")
+    format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IBMPlexSansArabic";
+  src: url("/public/font/IBMPlexSansArabic/IBMPlexSansArabic-SemiBold.ttf")
+    format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IBMPlexSansArabic";
+  src: url("/public/font/IBMPlexSansArabic/IBMPlexSansArabic-Bold.ttf")
+    format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+html,
+body {
+  border-radius: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "IBMPlexSansArabic", sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+@theme {
+  --color-main: #0339a6;
+  --color-black: #0d0d0d;
+  --color-white: #ffffff;
+  --color-gray-background: #d9d9d9;
+  --shadow-permissions-container: 0px 0px 10px 4px #aaa;
+  --shadow-card: 0px -5px 10px 1px #aaa;
+}
