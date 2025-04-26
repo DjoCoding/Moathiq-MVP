@@ -1,5 +1,4 @@
 import { useParams } from "react-router-dom";
-import Progress from "../../shared/Progress";
 import General from "./General";
 import Statistics from "./Statistics";
 
