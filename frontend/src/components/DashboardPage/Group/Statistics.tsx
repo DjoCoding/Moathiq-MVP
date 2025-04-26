@@ -9,7 +9,7 @@ function InteractionWithTeacher() {
   return (
     <div className="flex-1 flex flex-col gap-2 px-4">
       <h2 className="w-fit font-bold text-main text-xl">مؤشرات تفاعل الطلبة</h2>
-      <div className="flex flex-col gap-1">
+      <div className="flex flex-col gap-2">
         <div className="flex justify-between items-center gap-4">
           <p className="text-sm text-main font-semibold">نسبة تفاعل المحاضر</p>
           <div className="px-2 bg-main rounded">
@@ -60,7 +60,7 @@ function InteractionWithStudents() {
   return (
     <div className="flex-1 flex flex-col gap-2 px-4">
       <h2 className="font-bold text-main text-xl">مؤشرات تفاعل الطلبة</h2>
-      <div className="flex flex-col gap-1">
+      <div className="flex flex-col gap-2">
         <div className="flex justify-between items-center gap-4">
           <p className="text-sm text-main font-semibold">
             نسبة التفاعل العام للطلبة
@@ -124,7 +124,7 @@ function ConsistencyStatistics() {
   return (
     <div className="flex-1 flex flex-col gap-2 px-4">
       <h2 className="font-bold text-main text-xl">مؤشرات تفاعل الطلبة</h2>
-      <div className="flex flex-col gap-1">
+      <div className="flex flex-col gap-2">
         <div className="flex justify-between items-center gap-4">
           <p className="text-sm text-main font-semibold">
             نسبة إنجاز الواجبات في الوقت المحدد
@@ -164,7 +164,7 @@ export default function Statistics({ classID, groupID }: StatisticsProps) {
   return (
     <div className="flex flex-col gap-4">
       <h1 className="font-bold text-2xl text-main">الاحصائيات</h1>
-      <div className="w-full flex">
+      <div className="w-full flex gap-1">
         <InteractionWithStudents />
         <div className="border border-black/25"></div>
         <InteractionWithTeacher />
