@@ -60,14 +60,20 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
   font-family: "IBMPlexSansArabic", sans-serif;
+  overflow-x: hidden;
 }
 
 @theme {
   --color-main: #0339a6;
   --color-black: #0d0d0d;
   --color-white: #ffffff;
+  --color-gray-background: #d9d9d9;
   --shadow-form: 0px -10px 10px 1px #aaa;
   --shadow-card: 0px -5px 10px 1px #aaa;
+  --shadow-normal: 0px 0px 10px 1px #aaa;
+}
+
+tr {
+  @apply border-b-[3px] border-black/35;
 }

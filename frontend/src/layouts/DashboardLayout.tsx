@@ -3,9 +3,9 @@ import { Outlet } from "react-router-dom";
 
 export default function DashboardLayout() {
   return (
-    <div className="w-screen max-h-screen flex flex-col">
+    <div className="w-screen h-screen flex flex-col">
       <Navbar />
-      <div className="grow py-10 flex">
+      <div className="grow py-10 flex flex-col">
         <Outlet />
       </div>
     </div>

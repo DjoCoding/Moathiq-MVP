@@ -23,7 +23,7 @@ export default function Navbar() {
         <nav dir="rtl" className="flex items-center justify-center">
           {navBarLinks.map((link) => (
             <Link
-              className="text-center w-[90px] px-2 py-3 text-white hover:bg-white hover:text-main duration-200 transition-all"
+              className="text-center w-[90px] px-2 py-6 text-white hover:bg-white hover:text-main duration-200 transition-all"
               to={link.to}
             >
               {link.name}

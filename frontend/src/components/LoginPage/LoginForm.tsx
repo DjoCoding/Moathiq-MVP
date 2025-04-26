@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 
 interface LoginFormDataT {
   username: string;
@@ -12,6 +12,8 @@ export default function LoginForm() {
     password: "",
   });
 
+  const [success, setSuccess] = useState<boolean>(false);
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -20,7 +22,13 @@ export default function LoginForm() {
     }));
   };
 
-  const handleClick = () => {};
+  const handleClick = () => {
+    if (formData.username.length > 0 && formData.password.length > 0) {
+      return setSuccess(true);
+    }
+  };
+
+  if(success) return <Navigate to="/dashboard/classes" />
 
   return (
     <form className="mt-10 flex flex-col gap-4" dir="rtl">
@@ -50,7 +58,10 @@ export default function LoginForm() {
         </button>
       </div>
       <div className="flex items-center justify-center">
-        <Link className="font-bold text-sm text-black/70 underline" to="/reset-password">
+        <Link
+          className="font-bold text-sm text-black/70 underline"
+          to="/reset-password"
+        >
           نسيت كلمة السر ؟
         </Link>
       </div>
