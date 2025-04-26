@@ -22,7 +22,7 @@ function InteractionWithTeacher() {
             متوسط عدد الأسئلة المطروحة
           </p>
           <div className="px-2 bg-main rounded">
-            <AnimatedNumber from={0} to={67} className="font-bold text-white" />
+            <AnimatedNumber from={0} to={32} className="font-bold text-white" />
             <span className="text-white font-bold">%</span>
           </div>
         </div>
@@ -31,7 +31,7 @@ function InteractionWithTeacher() {
             متوسط تأخير بدء الجلسات
           </p>
           <div className="px-2 bg-main rounded">
-            <AnimatedNumber from={0} to={67} className="font-bold text-white" />
+            <AnimatedNumber from={0} to={90} className="font-bold text-white" />
             <span className="text-white font-bold">%</span>
           </div>
         </div>
@@ -40,7 +40,7 @@ function InteractionWithTeacher() {
             نسبة الالتزام بوقت الحصة
           </p>
           <div className="px-2 bg-main rounded">
-            <AnimatedNumber from={0} to={67} className="font-bold text-white" />
+            <AnimatedNumber from={0} to={83} className="font-bold text-white" />
             <span className="text-white font-bold">%</span>
           </div>
         </div>
@@ -66,7 +66,7 @@ function InteractionWithStudents() {
             نسبة التفاعل العام للطلبة
           </p>
           <div className="px-2 bg-main rounded">
-            <AnimatedNumber from={0} to={67} className="font-bold text-white" />
+            <AnimatedNumber from={0} to={39} className="font-bold text-white" />
             <span className="text-white font-bold">%</span>
           </div>
         </div>
@@ -75,7 +75,7 @@ function InteractionWithStudents() {
             نسبة الحضور في الوقت المحدد
           </p>
           <div className="px-2 bg-main rounded">
-            <AnimatedNumber from={0} to={67} className="font-bold text-white" />
+            <AnimatedNumber from={0} to={21} className="font-bold text-white" />
             <span className="text-white font-bold">%</span>
           </div>
         </div>
@@ -84,7 +84,7 @@ function InteractionWithStudents() {
             معدل تجاوب الطلبة مع المحاضر
           </p>
           <div className="px-2 bg-main rounded">
-            <AnimatedNumber from={0} to={67} className="font-bold text-white" />
+            <AnimatedNumber from={0} to={63} className="font-bold text-white" />
             <span className="text-white font-bold">%</span>
           </div>
         </div>
@@ -93,7 +93,7 @@ function InteractionWithStudents() {
             معدل استخدام الدردشة والتفاعلات
           </p>
           <div className="px-2 bg-main rounded">
-            <AnimatedNumber from={0} to={67} className="font-bold text-white" />
+            <AnimatedNumber from={0} to={60} className="font-bold text-white" />
             <span className="text-white font-bold">%</span>
           </div>
         </div>
@@ -102,7 +102,7 @@ function InteractionWithStudents() {
             نسبة المشاركة في التصويتات
           </p>
           <div className="px-2 bg-main rounded">
-            <AnimatedNumber from={0} to={67} className="font-bold text-white" />
+            <AnimatedNumber from={0} to={54} className="font-bold text-white" />
             <span className="text-white font-bold">%</span>
           </div>
         </div>
@@ -111,7 +111,7 @@ function InteractionWithStudents() {
             متوسط الدقائق النشطة لكل طالب
           </p>
           <div className="px-2 bg-main rounded">
-            <AnimatedNumber from={0} to={67} className="font-bold text-white" />
+            <AnimatedNumber from={0} to={87} className="font-bold text-white" />
             <span className="text-white font-bold">%</span>
           </div>
         </div>
@@ -130,7 +130,7 @@ function ConsistencyStatistics() {
             نسبة إنجاز الواجبات في الوقت المحدد
           </p>
           <div className="px-2 bg-main rounded">
-            <AnimatedNumber from={0} to={67} className="font-bold text-white" />
+            <AnimatedNumber from={0} to={30} className="font-bold text-white" />
             <span className="text-white font-bold">%</span>
           </div>
         </div>
@@ -139,7 +139,7 @@ function ConsistencyStatistics() {
             نسبة التكاليف المتأخرة
           </p>
           <div className="px-2 bg-main rounded">
-            <AnimatedNumber from={0} to={67} className="font-bold text-white" />
+            <AnimatedNumber from={0} to={57} className="font-bold text-white" />
             <span className="text-white font-bold">%</span>
           </div>
         </div>
@@ -148,7 +148,7 @@ function ConsistencyStatistics() {
             نسبة الإجابات الصحيحة
           </p>
           <div className="px-2 bg-main rounded">
-            <AnimatedNumber from={0} to={67} className="font-bold text-white" />
+            <AnimatedNumber from={0} to={32} className="font-bold text-white" />
             <span className="text-white font-bold">%</span>
           </div>
         </div>

@@ -1,3 +1,4 @@
+import { AnimatedNumber } from "../../shared/AnimatedNumber";
 import Progress from "../../shared/Progress";
 
 interface GeneralProps {
@@ -12,9 +13,15 @@ export default function General({ groupID }: GeneralProps) {
     >
       <div className="flex-1 flex flex-col gap-2">
         <h1 className="text-2xl text-main font-bold">الشعبة {groupID}</h1>
-        <div className="flex flex-col lg:flex-row gap-2 items-center">
-          <p className="text-main text-sm">عدد الطلاب المنتظمين: 25</p>
-          <p className="text-main text-sm">متوسط الغياب في الأسبوع: 4</p>
+        <div className="flex flex-col lg:flex-row gap-1 items-center">
+          <p className="text-main text-sm font-semibold">
+            عدد الطلاب المنتظمين:
+            <AnimatedNumber from={0} to={24} className="" />
+          </p>
+          <p className="text-main text-sm font-semibold">
+            متوسط الغياب في الأسبوع:
+            <AnimatedNumber from={0} to={4} className="" />
+          </p>
         </div>
       </div>
       <div className="flex-1 flex flex-col gap-2">
