@@ -32,6 +32,7 @@ export default function Groups({ details }: GroupsProps) {
           {details.map((detail) => {
             return (
               <GroupDetails
+                classID={detail.class_id}
                 groupID={detail.group_id}
                 quizWork={detail.quiz_work}
                 responsivenessLevel={detail.responsiveness_level}

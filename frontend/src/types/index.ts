@@ -11,3 +11,6 @@ export interface ClassItem {
     name: string;
     description: string;
 }
+
+export type LinkT = "المواد" | "الشعب" | "المحاضرات" | "التواصل";
+
